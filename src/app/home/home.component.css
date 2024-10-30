@@ -1,0 +1,165 @@
+/* General body styling */
+body {
+    background-color: #f8f9fa;
+}
+
+/* Navbar styling */
+.navbar {
+    padding: 0.5rem 1rem;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+}
+
+/* Button spacing */
+.btn-spacing {
+    margin: 0.5rem;
+}
+
+/* Carousel caption styling */
+.carousel-caption h4 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Card styling */
+.card {
+    border: none;
+}
+
+.card-img-top {
+    height: 180px;
+    object-fit: cover;
+}
+
+/* Footer styling */
+footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 1rem;
+}
+body {
+    background-color: #f8f9fa;
+}
+
+.navbar {
+    padding: 0.5rem 1rem;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+}
+
+.btn-spacing {
+    margin: 0.5rem;
+}
+
+.carousel-caption h4 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.card {
+    border: none;
+}
+
+.card-img-top {
+    height: 180px;
+    object-fit: cover;
+}
+
+footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 1rem;
+}
+
+/* Background gradient for navbar */
+.bg-gradient {
+    background: linear-gradient(45deg, #1a73e8, #34a853);
+    color: white;
+  }
+  
+  /* Hover effect for links */
+  .navbar-brand,
+  .nav-link {
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .navbar-brand:hover,
+  .nav-link:hover {
+    color: #ffeb3b; /* Bright yellow on hover */
+  }
+  
+  /* Style for buttons */
+  .btn-outline-light {
+    border: 2px solid white;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .btn-outline-light::before {
+    /* content: ''; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background-color: rgba(255, 255, 255, 0.2); /* Light overlay effect */
+    transition: all 0.6s ease-in-out;
+    border-radius: 50%;
+    z-index: 0;
+    transform: translate(-50%, -50%) scale(0);
+}
+
+
+  .btn-outline-light:hover {
+    background-color: #ff5733; /* Bright orange background on hover */
+    border-color: #ff5733; /* Matching border on hover */
+    color: white;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5); /* Shadow on text */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Soft shadow around the button */
+  }
+
+  .btn-outline-light:hover::before {
+    transform: translate(-50%, -50%) scale(1); /* Expands background overlay on hover */
+}
+
+/* Adding a glowing hover effect to Doctor button */
+.btn-outline-light.doctor-btn:hover {
+    box-shadow: 0px 0px 15px rgba(255, 100, 100, 0.8); /* Reddish glow effect */
+}
+
+/* Adding a glowing hover effect to Admin button */
+.btn-outline-light.admin-btn:hover {
+    box-shadow: 0px 0px 15px rgba(100, 255, 100, 0.8); /* Greenish glow effect */
+}
+  
+  /* Make the navbar stick at the top */
+  .navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  

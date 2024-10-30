@@ -1,0 +1,163 @@
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(45deg, #f3ec78, #af4261);
+    color: #333;
+    animation: gradientBG 10s ease infinite;
+  }
+  
+  @keyframes gradientBG {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  .navbar {
+    background-color: #4a90e2;
+    animation: navbarGlow 3s infinite ease-in-out;
+  }
+  
+  @keyframes navbarGlow {
+    0% {
+      box-shadow: 0 0 15px rgba(74, 144, 226, 0.8);
+    }
+    100% {
+      box-shadow: 0 0 30px rgba(74, 144, 226, 0.8);
+    }
+  }
+  
+  .navbar-brand, .nav-link {
+    font-size: 1.4rem;
+    color: white !important;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    color: #ffd700 !important;
+  }
+  
+  h2 {
+    color: #0fba1d;
+    animation: textColorShift 3s infinite ease-in-out;
+  }
+  
+  @keyframes textColorShift {
+    0% {
+      color: #ff7b54;
+    }
+    50% {
+      color: #ffd700;
+    }
+    100% {
+      color: #ff7b54;
+    }
+  }
+  
+  /* Table Styles */
+  .table-container {
+    margin-top: 20px;
+    animation: fadeInUp 2s ease-in-out;
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    animation: bounceIn 2s ease-out;
+  }
+  
+  @keyframes bounceIn {
+    0% {
+      transform: scale(0.5);
+      opacity: 0;
+    }
+    50% {
+      transform: scale(1.1);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .styled-table thead {
+    background-color: #ff7b54;
+    color: white;
+  }
+  
+  .styled-table th, .styled-table td {
+    padding: 12px 15px;
+    text-align: left;
+  }
+  
+  .styled-table tbody tr {
+    transition: background-color 0.3s ease;
+  }
+  
+  .styled-table tbody tr:nth-child(even) {
+    background-color: #f3f3f3;
+  }
+  
+  .styled-table tbody tr:hover {
+    background-color: #0a7bc282;
+    color: #000;
+    transform: scale(1.02);
+    transition: transform 0.2s ease;
+  }
+  
+  /* Button Styles */
+  .btn-danger {
+    background: linear-gradient(45deg, #ff416c, #ff4b2b);
+    border: none;
+    transition: transform 0.3s ease;
+  }
+
+  .btn-danger:hover {
+    transform: scale(1.1);
+    background: linear-gradient(45deg, #ff4b2b, #ff416c);
+    box-shadow: 0 0 20px rgba(255, 75, 43, 0.8);
+  }
+  
+  .btn-success {
+    background: linear-gradient(45deg, #22a105, #22a105);
+    border: none;
+    transition: transform 0.3s ease;
+  }
+
+  .btn-success:hover {
+    transform: scale(1.1);
+    background: linear-gradient(45deg, #22a105, #22a105);
+    box-shadow: 0 0 20px rgba(255, 75, 43, 0.8);
+  }
+
+  .btn-primary {
+    background: linear-gradient(45deg, #0392ff, #0392ff);
+    border: none;
+    transition: transform 0.3s ease;
+  }
+
+  .btn-primary:hover {
+    transform: scale(1.1);
+    background: linear-gradient(45deg, #0392ff, #0392ff);
+    box-shadow: 0 0 20px rgba(255, 75, 43, 0.8);
+  }

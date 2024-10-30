@@ -1,0 +1,160 @@
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(45deg, #f3ec78, #af4261);
+    color: #333;
+    background-size: 200% 200%;
+    animation: gradientBG 10s ease infinite;
+  }
+  
+  /* Gradient background animation */
+  @keyframes gradientBG {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  /* Navbar Styling */
+  .navbar {
+    background-color: #4a90e2;
+    box-shadow: 0 0 20px rgba(74, 144, 226, 0.5);
+    transition: background-color 0.3s ease;
+  }
+  
+  .navbar-brand,
+  .nav-link {
+    font-size: 1.4rem;
+    color: white !important;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    color: #ffd700 !important;
+  }
+  
+  /* Title Animation and Styling */
+  .title {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 28px;
+    color: #0fba1d;
+    animation: textColorShift 3s infinite ease-in-out;
+  }
+  
+  @keyframes textColorShift {
+    0% {
+      color: #ff7b54;
+    }
+    50% {
+      color: #ffd700;
+    }
+    100% {
+      color: #ff7b54;
+    }
+  }
+  
+  /* Patient Info Section */
+  .patient-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 1s ease-in-out;
+    margin-bottom: 30px;
+  }
+  
+  label {
+    font-size: 18px;
+    color: #555;
+  }
+  
+  b {
+    color: #ff4b2b;
+  }
+  
+  /* Fade in up animation for patient details */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Button Styles */
+  .btn-danger {
+    background: linear-gradient(45deg, #ff416c, #ff4b2b);
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .btn-danger:hover {
+    transform: scale(1.1);
+    background: linear-gradient(45deg, #ff4b2b, #ff416c);
+    box-shadow: 0 0 15px rgba(255, 75, 43, 0.8);
+  }
+  
+  /* Table Styles (if any table is present) */
+  .styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+  }
+  
+  .styled-table thead {
+    background-color: #ff7b54;
+    color: white;
+  }
+  
+  .styled-table th,
+  .styled-table td {
+    padding: 12px 15px;
+  }
+  
+  .styled-table tbody tr:nth-child(even) {
+    background-color: #f3f3f3;
+  }
+  
+  .styled-table tbody tr:hover {
+    background-color: #0a7bc282;
+    color: #000;
+    transform: scale(1.02);
+    transition: transform 0.2s ease;
+  }
+  
+  /* Media Query for smaller screens */
+  @media (max-width: 768px) {
+    .patient-info {
+      grid-template-columns: 1fr;
+    }
+  
+    .navbar {
+      padding: 10px;
+    }
+  
+    .title {
+      font-size: 24px;
+    }
+  }
+  

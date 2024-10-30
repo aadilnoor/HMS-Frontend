@@ -1,0 +1,150 @@
+<!-- Navbar -->
+<nav style="margin: auto" class="navbar navbar-expand-lg bg-primary">
+  <a style="color: white" class="navbar-brand" href="#">
+    <img
+      src="../../assets/images/pngwing.com.png"
+      alt="Hospital Logo"
+      style="height: 40px; width: 40px; margin-right: 10px"
+    />
+    Nathu Baba Hospital
+  </a>
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-bs-toggle="collapse"
+    data-bs-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <li class="nav-item">
+        <a
+          style="color: white"
+          class="nav-link active"
+          aria-current="page"
+          routerLink="/doctor"
+          >Back -></a
+        >
+      </li>
+    </ul>
+
+    <!-- <div class="mx-2">
+        <button
+          style="margin: 5px"
+          class="btn btn-danger"
+          data-bs-toggle="modal"
+          data-bs-target="#loginModal"
+        >
+          <a style="color: white" routerLink="/home">Logout</a>
+        </button>
+      </div>
+       -->
+  </div>
+</nav>
+
+<!-- Form -->
+<div class="container" style="margin-top: 40px">
+  <h1 class="text-center">Update Patient</h1>
+
+  <form (ngSubmit)="onSubmit()">
+    <!-- Name -->
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input
+        type="text"
+        id="name"
+        class="form-control animated-input"
+        placeholder="Enter Name"
+        name="name"
+        [(ngModel)]="patient.name"
+      />
+    </div>
+
+    <!-- Age -->
+    <div class="form-group">
+      <label for="age">Age:</label>
+      <input
+        type="text"
+        id="age"
+        class="form-control animated-input"
+        placeholder="Enter Age"
+        name="age"
+        [(ngModel)]="patient.age"
+      />
+    </div>
+
+    <!-- Blood Group -->
+    <div class="form-group">
+      <label for="blood">Blood Group:</label>
+      <input
+        type="text"
+        id="blood"
+        class="form-control animated-input"
+        placeholder="Enter Blood Group"
+        name="blood"
+        [(ngModel)]="patient.blood"
+      />
+    </div>
+
+    <!-- Prescription -->
+    <div class="form-group">
+      <label for="prescription">Prescription:</label>
+      <input
+        type="text"
+        id="prescription"
+        class="form-control animated-input"
+        placeholder="Enter Prescription"
+        name="prescription"
+        [(ngModel)]="patient.prescription"
+      />
+    </div>
+
+    <!-- Dose -->
+    <div class="form-group">
+      <label for="dose">Dose:</label>
+      <input
+        type="text"
+        id="dose"
+        class="form-control animated-input"
+        placeholder="Enter Dose"
+        name="dose"
+        [(ngModel)]="patient.dose"
+      />
+    </div>
+
+    <!-- Fees -->
+    <div class="form-group">
+      <label for="fees">Fees:</label>
+      <input
+        type="text"
+        id="fees"
+        class="form-control animated-input"
+        placeholder="Enter Fees"
+        name="fees"
+        [(ngModel)]="patient.fees"
+      />
+    </div>
+
+    <!-- Urgency Level -->
+    <div class="form-group">
+      <label for="urgency">Urgency Level:</label>
+      <input
+        type="text"
+        id="urgency"
+        class="form-control animated-input"
+        placeholder="Enter Urgency Level"
+        name="urgency"
+        [(ngModel)]="patient.urgency"
+      />
+    </div>
+
+    <!-- Submit Button -->
+    <button type="submit" class="btn btn-success animated-button">
+      Submit
+    </button>
+  </form>
+</div>
